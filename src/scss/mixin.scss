@@ -5,3 +5,9 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+@mixin defaultZise {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

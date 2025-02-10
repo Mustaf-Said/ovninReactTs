@@ -1,12 +1,12 @@
-import "./App.css";
+import Main from "./main/Main";
 import Nav from "./Navbar/Nav";
-
+import "./scss/app.scss";
 function App() {
   return (
-    <>
+    <div className="divApp">
       <Nav />
-      <div>Hello World</div>
-    </>
+      <Main />
+    </div>
   );
 }
 
