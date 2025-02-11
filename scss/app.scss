@@ -4,11 +4,3 @@ body {
   text-align: center;
   background-color: forwards.$bodyBackground;
 }
-.divApp {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
