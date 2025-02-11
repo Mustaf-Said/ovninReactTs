@@ -1,7 +1,7 @@
 @use "forwards";
 
 .blogs {
-  @include forwards.flexBox(space-between, row);
+  @include forwards.flexBox(center, row);
   width: 100%;
   div {
     padding: 1em;
