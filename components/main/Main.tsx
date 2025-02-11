@@ -1,5 +1,4 @@
 import Blog from "../blog/Blog";
-
 function Main() {
   return (
     <div>

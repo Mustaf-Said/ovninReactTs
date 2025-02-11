@@ -8,7 +8,7 @@ type DataInfo = {
   author: string;
 };
 
-function Blog() {
+function Blogs() {
   return (
     <div className="blogs">
       {data.map((obj: DataInfo) => (
@@ -22,4 +22,13 @@ function Blog() {
   );
 }
 
-export default Blog;
+export default function Blog() {
+  return (
+    <div>
+      <h1>Amazing images</h1>
+      <Blogs />
+      <Blogs />
+      <Blogs />
+    </div>
+  );
+}
