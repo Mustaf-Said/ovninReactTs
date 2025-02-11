@@ -1,3 +1,9 @@
+@use "forwards";
+
+body {
+  text-align: center;
+  background-color: forwards.$bodyBackground;
+}
 .divApp {
   display: flex;
   justify-content: space-between;

@@ -1,33 +1,37 @@
-/* @use "forward"; */
+@use "forwards";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-} 
-
-div {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  background: rgb(73, 107, 78);
-  padding: 5px;
-}
-ul {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: 1.5em;
+  box-sizing: border-box;
   margin: 0;
-  li {
-    cursor: pointer;
-    border: 0 3px 0 0 solid rgb(179, 193, 193);
-    color: rgb(179, 193, 193);
+  padding: 0;
+}
+
+.header {
+  @include forwards.flexBox(space-between, row);
+  color: forwards.$headetextolor;
+  width: 100%;
+  height: 20vh;
+  background: #324c43;
+  padding: 5px 0.9em;
+  .logo {
+    @include forwards.flexBox(flex-start, row);
+    img {
+      @include forwards.widhHight(10%, 10%);
+      cursor: pointer;
+    }
+  }
+
+  ul {
+    @include forwards.flexBox(space-between, row);
+    list-style: none;
+    gap: 1.5em;
+    margin: 0;
+    li {
+      cursor: pointer;
+      border: 0 3px 0 0 solid rgb(179, 193, 193);
+      &:hover {
+        border-bottom: 2px solid rgb(179, 193, 193);
+      }
+    }
   }
 }

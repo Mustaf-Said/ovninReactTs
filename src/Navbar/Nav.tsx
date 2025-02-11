@@ -3,10 +3,11 @@ import "../scss/nav.scss";
 
 const Nav = () => {
   return (
-    <div>
-      <section>
-        <img src={logo} width={50} height={50} alt="logo" />
-        <h1>Game-Home</h1>
+    <div className="header">
+      <section className="logo">
+        <h1> Game </h1>
+        <img src={logo} alt="logo" />
+        <h1> Home </h1>
       </section>
       <section>
         <ul>
