@@ -12,3 +12,14 @@
     @include forwards.widhHight(300px, 300px);
   }
 }
+.fruits {
+  @include forwards.flexBox(space-around, row);
+  width: 50%;
+  margin: auto;
+  gap: 1rem;
+  div {
+    border: 3px solid rgb(72, 114, 72);
+    padding: 1em;
+    border-radius: 1em;
+  }
+}
