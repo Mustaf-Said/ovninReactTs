@@ -1,4 +1,4 @@
-{ 
+{
   "compilerOptions": {
     "strict": true,
     "target": "es5",
@@ -7,8 +7,8 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  }, 
-"include": ["src"],
+  },
+  "include": ["src"],
   "exclude": ["node_modules"],
   "files": [],
   "references": [
