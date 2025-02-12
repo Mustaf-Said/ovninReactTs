@@ -21,7 +21,6 @@ function Blogs() {
     </div>
   );
 }
-
 export default function Blog() {
   return (
     <div>

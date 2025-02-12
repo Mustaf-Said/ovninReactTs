@@ -1,0 +1,12 @@
+@use "forwards";
+
+* {
+  @include forwards.defaultZise;
+}
+/* body {
+  @include forwards.flexBox(center, row);
+} */
+
+.test {
+  background: rgb(150, 150, 150);
+}
