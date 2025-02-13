@@ -4,17 +4,51 @@
   @include forwards.defaultZise;
 }
 
-.test {
-  padding: 1.9rem 0;
-  ul {
-    @include forwards.flexBox(center, row);
- /*    padding: 7px; */
-    list-style: none;
+ul {
+  @include forwards.flexBox(center, row);
+  list-style: none;
+}
+li {
+  padding: 7px;
+  span {
+    font-weight: 900;
   }
-  li {
-    padding: 7px;
-    span{
-      font-weight: 900;
+}
+
+//animation and @mixin
+/* .test {
+  background: rgb(213, 224, 123);
+
+  @include keyframes(fade) {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+  }
+
+  @include animate(fade, 1s, linear, 1);
+}
+ */
+
+/* animation-duration: $duration;
+animation-iteration-count: infinite; */
+
+.test {
+  background: rgb(36, 125, 40);
+  h3 {
+    padding: 1.5em 0;
+  }
+  width: 5rem;
+  height: 15vh;
+  border: 1px solid rgb(177, 174, 174);
+  border-radius: 3rem;
+  position: relative; // Krävs för animationen att fungera
+  animation: form 7s linear 0.1s infinite alternate;
+  @include forwards.keyframes(form) {
+    from {
+      transform: translateX(7vw);
+    }
+    to {
+      transform: translateX(80vw);
     }
   }
 }

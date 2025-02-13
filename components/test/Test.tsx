@@ -1,33 +1,44 @@
 import "../../scss/test.scss";
 
-type Todo = {
+function Test() {
+  return (
+    <div className="test">
+      <h3>React</h3>
+    </div>
+  );
+}
+
+type toDo = {
   item: string;
   count: number;
   status: boolean;
 };
 
-type TestProps = {
-  list: Todo[];
+type Items = {
+  list: toDo[];
 };
-
-export default function Test({ list }: TestProps) {
+export default function TodoList({ list }: Items) {
   return (
-    <div className="test">
-      {list.map((obj) => (
-        <ul key={obj.item}>
-          <li>
-            <span>Item:</span> {obj.item}
-          </li>
-          <li>
-            <span>Count: </span>
-            {obj.count}
-          </li>
-          <li>
-            <span>Status: </span>
-            {obj.status ? "Completed" : "Pending"}
-          </li>
-        </ul>
-      ))}
-    </div>
+    <>
+      <div>
+        {list.map((obj) => (
+          <ul key={obj.item}>
+            <li>
+              <span>Item:</span>
+              {obj.item}
+            </li>
+            <li>
+              <span>Count:</span>
+              {obj.count}
+            </li>
+            <li>
+              <span>Status:</span>
+              {obj.status ? "Complete" : "Wait"}
+            </li>
+          </ul>
+        ))}
+      </div>
+      <Test />
+    </>
   );
 }
