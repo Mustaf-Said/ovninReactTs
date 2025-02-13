@@ -1,13 +1,13 @@
 import "../../scss/test.scss";
 
-function Test() {
+export default function Test() {
   return (
     <div className="test">
-      <h3>React</h3>
+      <h3>React & TypeScript</h3>
     </div>
   );
 }
-
+/* 
 type toDo = {
   item: string;
   count: number;
@@ -42,3 +42,4 @@ export default function TodoList({ list }: Items) {
     </>
   );
 }
+ */

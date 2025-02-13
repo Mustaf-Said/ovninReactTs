@@ -33,22 +33,22 @@ li {
 animation-iteration-count: infinite; */
 
 .test {
-  background: rgb(36, 125, 40);
-  h3 {
-    padding: 1.5em 0;
-  }
-  width: 5rem;
-  height: 15vh;
+ /*  background: rgb(70, 100, 71); */
+ color: rgb(158, 160, 163);
+ font-weight: 900;
+ font-size: 1.5em;
+ /*   width: 5rem;
+  height: 15vh; 
   border: 1px solid rgb(177, 174, 174);
-  border-radius: 3rem;
+  border-radius: 3rem;*/
   position: relative; // Krävs för animationen att fungera
   animation: form 7s linear 0.1s infinite alternate;
   @include forwards.keyframes(form) {
     from {
-      transform: translateX(7vw);
+      transform: translateX(15vw);
     }
     to {
-      transform: translateX(80vw);
+      transform: translateX(59vw);
     }
   }
 }

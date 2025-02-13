@@ -24,7 +24,7 @@ function Blogs() {
 export default function Blog() {
   return (
     <div>
-      <h1>Amazing images</h1>
+      <h1 className="h1">Amazing images</h1>
       <Blogs />
       <Blogs />
       <Blogs />
