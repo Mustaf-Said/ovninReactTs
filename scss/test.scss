@@ -3,10 +3,18 @@
 * {
   @include forwards.defaultZise;
 }
-/* body {
-  @include forwards.flexBox(center, row);
-} */
 
 .test {
-  background: rgb(150, 150, 150);
+  padding: 1.9rem 0;
+  ul {
+    @include forwards.flexBox(center, row);
+ /*    padding: 7px; */
+    list-style: none;
+  }
+  li {
+    padding: 7px;
+    span{
+      font-weight: 900;
+    }
+  }
 }

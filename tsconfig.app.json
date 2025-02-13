@@ -24,5 +24,11 @@
     "composite": true
   },
 
-  "include": ["src", "components/Navbar", "components/main", "components/blog"]
+  "include": [
+    "src",
+    "components/Navbar",
+    "components/main",
+    "components/blog",
+    "components/test"
+  ]
 }
