@@ -33,11 +33,11 @@ li {
 animation-iteration-count: infinite; */
 
 .test {
- /*  background: rgb(70, 100, 71); */
- color: rgb(158, 160, 163);
- font-weight: 900;
- font-size: 1.5em;
- /*   width: 5rem;
+  /*  background: rgb(70, 100, 71); */
+  color: rgb(158, 160, 163);
+  font-weight: 900;
+  font-size: 1.5em;
+  /*   width: 5rem;
   height: 15vh; 
   border: 1px solid rgb(177, 174, 174);
   border-radius: 3rem;*/
@@ -50,5 +50,14 @@ animation-iteration-count: infinite; */
     to {
       transform: translateX(59vw);
     }
+  }
+}
+
+.btnV7Fr {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 1em;
+  button {
+    padding: 5px 7px;
   }
 }

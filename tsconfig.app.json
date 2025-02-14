@@ -29,6 +29,6 @@
     "components/Navbar",
     "components/main",
     "components/blog",
-    "components/test"
+    "components/ovn"
   ]
 }
